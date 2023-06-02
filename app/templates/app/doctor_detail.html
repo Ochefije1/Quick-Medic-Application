@@ -1,0 +1,18 @@
+{% extends 'base.html'%}
+
+{% load static%}
+
+{% block content%}
+    <div>
+       <div>
+            <img src="{{object.photo.url}}">
+        </div> 
+        {{object.first_name}}
+        {{object.last_name}}
+        {{object.speciality}}
+        {{object.portfolio_number}}
+        {{object.email}}
+        {{object.phone}}
+
+    </div>
+{% endblock %}
